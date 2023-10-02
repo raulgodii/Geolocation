@@ -1,7 +1,10 @@
 function obtenerPosicion(coordenadas){
     let lat = coordenadas.coords.latitude;
     let lon = coordenadas.coords.longitude;
-    document.getElementById("posicion").innerHTML = ("Distancia recorrida: " + getDistanciaMetros(latOrigen, lonOrigen, lat, lon));
+    document.getElementById("posicion").innerHTML = ("Distancia recorrida: " + sumDistancia + getDistanciaMetros(latOrigen, lonOrigen, lat, lon));
+    sumDistancia += getDistanciaMetros(latOrigen, lonOrigen, lat, lon);
+    latOrigen = lat;
+    lonOrigen = lon;
 }
 
 function posicionActual(coordenadas){
@@ -11,6 +14,7 @@ function posicionActual(coordenadas){
 
 var latOrigen;
 var lonOrigen;
+var sumDistancia = 0;
 
 function getDistanciaMetros(lat1,lon1,lat2,lon2)
 {
