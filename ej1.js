@@ -1,7 +1,7 @@
 function obtenerPosicion(coordenadas){
     let lat = coordenadas.coords.latitude;
     let lon = coordenadas.coords.longitude;
-    document.getElementById("posicion").innerHTML = ("Distancia recorrida: " + sumDistancia + getDistanciaMetros(latOrigen, lonOrigen, lat, lon));
+    document.getElementById("posicion").innerHTML = ("Distancia recorrida: " + toFixed((sumDistancia + getDistanciaMetros(latOrigen, lonOrigen, lat, lon)), 2));
     sumDistancia += getDistanciaMetros(latOrigen, lonOrigen, lat, lon);
     latOrigen = lat;
     lonOrigen = lon;
