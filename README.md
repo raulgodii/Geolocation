@@ -12,6 +12,6 @@
 
 ###
 
-<h4 align="left">Web Application which counts the amount of steps that you do.<br>Execercise do with de object "geolocation" in order to practice it.<br><br>- Subject: client-side development<br>- I.E.S Francisco Ayala<br>- 2nd year of DAW</h4>
+<h4 align="left">Web Application which counts the amount of steps that you do.<br>Execercise do with the object "geolocation" in order to practice it.<br><br>- Subject: client-side development<br>- I.E.S Francisco Ayala<br>- 2nd year of DAW</h4>
 
 ###
